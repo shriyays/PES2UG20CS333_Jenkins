@@ -11,21 +11,21 @@ pipeline {
 
     stage('Test') {
       steps {
-        //sh './new'
+        sh './new'
         echo 'Testing Successful'
       }
     }
 
     stage('Deploy') {
       when {
-        expression {
+        /*expression {
           currentBuild.result == null || currentBuild.result == 'SUCCESS'
         }
       }
       steps {
         echo 'Deployment Successful'
       }
-    }
+    }*/
   }
 
   post {
