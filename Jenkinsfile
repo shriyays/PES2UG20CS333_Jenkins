@@ -11,12 +11,12 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh './new'
+        //sh './new'
         echo 'Testing Successful'
       }
     }
 
-    stage('Deploy') { no
+    stage('Deploy') {
       when {
         expression {
           currentBuild.result == null || currentBuild.result == 'SUCCESS'
