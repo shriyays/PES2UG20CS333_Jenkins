@@ -24,8 +24,8 @@ pipeline {
       }
       steps {
         echo 'Deployment Successful'
-      }
-    }*/
+      }*/
+    }
   }
 
   post {
